@@ -1,15 +1,9 @@
 import React from 'react';
+import Form from './Form';
 
 const App = () => {
     return (
-        <div>
-            <h1>
-                Hello from
-                <span>
-                    { ` ${process.env.HOME_URL}`}
-                </span>
-            </h1>
-        </div>
+        <Form />
     );
 };
 
