@@ -10,7 +10,7 @@ module.exports = (env) => {
     const currentPath = path.join(__dirname);
 
     const basePath = `${currentPath}/.env`;
-    const envPath = env ?  `${basePath}.${env.ENVIRONMENT}` : `${basePath}`;
+    const envPath = `${basePath}.${env.ENVIRONMENT}`;
 
     // Check if the file exists, otherwise fall back to the production .env
     const finalPath = fs.existsSync(envPath) ? envPath : basePath;
