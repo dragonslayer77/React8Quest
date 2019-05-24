@@ -10,6 +10,7 @@ module.exports = (env) => {
     const currentPath = path.join(__dirname);
 
     const basePath = `${currentPath}/.env`;
+    console.log(env)
     const envPath = env ? `${basePath}` : `${basePath}.${env.ENVIRONMENT}`;
 
     // Check if the file exists, otherwise fall back to the production .env
